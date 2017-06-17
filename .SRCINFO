@@ -1,16 +1,26 @@
-pkgbase = opencl-amd
-	pkgdesc = OpenCL userspace driver, AMD hybrid version
+pkgbase = hybrid-amd
 	pkgver = 17.10.429170
 	pkgrel = 1
 	url = http://www.amd.com
 	arch = x86_64
 	license = custom:AMD
 	makedepends = wget
-	depends = ocl-icd
 	depends = libdrm-amd
 	conflicts = amdgpocl
 	source = https://www2.ati.com/drivers/linux/ubuntu/amdgpu-pro-17.10-429170.tar.xz
 	sha256sums = cb1ea7f9756f197a976138d2c00f239ae4ee43b839fbb1ea57f8770957d4afd6
 
 pkgname = opencl-amd
+	pkgdesc = OpenCL userspace driver, AMD hybrid version
+	depends = ocl-icd
+	optdepends = opencl-headers: headers necessary for OpenCL development
+	provides = opencl-driver
+	conflicts = opencl-mesa
+
+pkgname = vulkan-amd
+	pkgdesc = Vulkan userspace driver, AMD hybrid version
+	depends = vulkan-icd-loader
+	optdepends = vulkan-devel: for Vulkan development
+	provides = vulkan-driver
+	conflicts = vulkan-radeon
 
