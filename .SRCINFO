@@ -1,5 +1,5 @@
 pkgbase = hybrid-amd
-	pkgver = 17.10.429170
+	pkgver = 17.30.458935
 	pkgrel = 1
 	url = http://www.amd.com
 	arch = x86_64
@@ -7,8 +7,8 @@ pkgbase = hybrid-amd
 	makedepends = wget
 	depends = libdrm-amd
 	conflicts = amdgpocl
-	source = https://www2.ati.com/drivers/linux/ubuntu/amdgpu-pro-17.10-429170.tar.xz
-	sha256sums = cb1ea7f9756f197a976138d2c00f239ae4ee43b839fbb1ea57f8770957d4afd6
+	source = https://www2.ati.com/drivers/linux/ubuntu/amdgpu-pro-17.30-458935.tar.xz
+	sha256sums = 3652a5c9476a650a3e3cd89bcd7ac119ed7d16a570501eeeea6a902cbc6f9488
 
 pkgname = opencl-amd
 	pkgdesc = OpenCL userspace driver, AMD hybrid version
